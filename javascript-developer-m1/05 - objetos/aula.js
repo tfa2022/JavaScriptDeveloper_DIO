@@ -3,7 +3,7 @@ class Pessoa {
     nome;
     idade;
     anoDeNascimento;
-
+    //contructor e o q acontece quando uma pessoa e instanciada
     constructor(nome, idade) {
         this.nome = nome;
         this.idade = idade;
@@ -11,7 +11,7 @@ class Pessoa {
     }
 
     descrever() {
-        console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`);  
+        console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`);
     }
 }
 

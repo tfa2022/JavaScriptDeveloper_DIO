@@ -4,6 +4,7 @@ Os carros possuem uma marca, uma cor e um gasto médio de combustível por Kilô
 Crie um método que dado a quantidade de quilómetros e o preço do combustível nos dê o valor 
 gasto em reais para realizar este percurso.
 */
+
 class carro {
     marca;
     cor;
@@ -22,7 +23,6 @@ class carro {
 }
 
 const uno = new carro('fiat', 'azul', 1 / 12);
-//console.log(uno);
 console.log(uno.calcularGastoDePercurso(70, 5));
 
 /*
@@ -33,5 +33,25 @@ Instancie uma pessoa chamada José que tenha 70kg de peso e 1,75 de altura e pe�
 do seu IMC;
 */
 
+class pessoa {
+    nome;
+    peso;
+    altura;
 
+    constructor(nome, peso, altura) {
+        this.nome = nome;
+        this.peso = peso;
+        this.altura = altura;
+    }
 
+    calcularImc() {
+        return this.peso / (this.altura * this.altura);
+    }
+
+}
+
+const jose = new pessoa('jose', 70, 1.75);
+console.log(jose.calcularImc());
+
+const tiago = new pessoa('tiago', 81, 1.68);
+console.log(tiago.calcularImc());

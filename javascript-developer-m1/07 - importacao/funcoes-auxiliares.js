@@ -1,5 +1,5 @@
 
-const entradas = [10, 5, 50, 10, 98, 23, 33, 44, 100, 1, 7];
+const entradas = [5, 50, 10, 98, 23,];
 let i = 0;
 
 function gets() {
@@ -13,3 +13,5 @@ function print(texto) {
 }
 
 module.exports = { gets, print };
+//o q ele vai exportar
+

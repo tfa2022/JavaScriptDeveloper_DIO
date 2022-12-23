@@ -7,6 +7,8 @@ notas.push(10);
 
 let soma = 0;
 
+//Estrutura de Repetição
+
 for (let i = 0; i < notas.length; i++) {
     const nota = notas[i];
     soma = soma + nota;
@@ -14,3 +16,4 @@ for (let i = 0; i < notas.length; i++) {
 
 const media = soma / notas.length;
 console.log(media);
+
